@@ -1,1 +1,0 @@
-Jun 06 08:50:17.427 VM: renamed from 'R1' to 'SERVEURS'

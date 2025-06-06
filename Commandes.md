@@ -16,11 +16,11 @@ end
 ### Sur Libre-service :
 ```
 conf term
-interface e0/0 (connectée à DMZ)
+interface e0/0 (connectée au switch)
 ip address 54.98.153.194 255.255.255.192
 no shutdown
 
-interface e0/1 (connectée au switch)
+interface e0/1 (connectée à LAN Libre-service)
 ip address 54.98.152.129 255.255.255.128
 no shutdown
 end
@@ -29,11 +29,11 @@ end
 ### Sur Commercial :
 ```
 conf term
-interface e0/0 (connectée à DMZ)
+interface e0/0 (connectée au switch)
 ip address 54.98.153.195 255.255.255.192
 no shutdown
 
-interface e0/1 (connectée au switch)
+interface e0/1 (connectée à LAN Commercial)
 ip address 54.98.152.1 255.255.255.128
 no shutdown
 end
@@ -42,11 +42,11 @@ end
 ### Sur Développement :
 ```
 conf term
-interface e0/0 (connectée à DMZ)
+interface e0/0 (connectée au switch)
 ip address 54.98.153.196 255.255.255.192
 no shutdown
 
-interface e0/1 (connectée au switch)
+interface e0/1 (connectée au LAN Développement)
 ip address 54.98.153.1 255.255.255.128
 no shutdown
 end
@@ -55,11 +55,11 @@ end
 ### Sur Recherche :
 ```
 conf term
-interface e0/0 (connectée à Développement)
+interface e0/0 (connectée à LAN Développement)
 ip address 54.98.153.2 255.255.255.128
 no shutdown
 
-interface e0/1 (connectée au switch)
+interface e0/1 (connectée à LAN Recherche)
 ip address 54.98.153.129 255.255.255.192
 no shutdown
 end
