@@ -1,0 +1,24 @@
+Jun 06 08:44:17.752 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Jun 06 08:44:17.752 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 58711.
+Jun 06 08:44:17.759 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 06 08:44:17.762 HYPERVISOR: exec_cmd: hypervisor working_dir /home/iut45/Etudiants/o22401110/GNS3/projects/sae/project-files/dynamips 
+Jun 06 08:44:17.762 GENERAL: working_dir=/home/iut45/Etudiants/o22401110/GNS3/projects/sae/project-files/dynamips
+Jun 06 08:44:17.763 HYPERVISOR: exec_cmd: hypervisor working_dir /home/iut45/Etudiants/o22401110/GNS3/projects/sae/project-files/dynamips/9fdf4014-27b0-40f1-be14-47d42d7cbfb6 
+Jun 06 08:44:17.764 GENERAL: working_dir=/home/iut45/Etudiants/o22401110/GNS3/projects/sae/project-files/dynamips/9fdf4014-27b0-40f1-be14-47d42d7cbfb6
+Jun 06 08:44:17.764 HYPERVISOR: exec_cmd: vm create Recherche 4 c3600 
+Jun 06 08:44:17.768 VM: VM Recherche created.
+Jun 06 08:44:17.770 HYPERVISOR: exec_cmd: vm set_con_tcp_port Recherche 5035 
+Jun 06 08:44:17.770 HYPERVISOR: exec_cmd: c3600 get_mac_addr Recherche 
+Jun 06 08:44:17.772 HYPERVISOR: exec_cmd: vm get_status Recherche 
+Jun 06 08:44:17.772 HYPERVISOR: exec_cmd: vm set_idle_pc Recherche 0x60693818 
+Jun 06 08:44:17.775 HYPERVISOR: exec_cmd: vm set_ios Recherche /home/iut45/Etudiants/o22401110/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+Jun 06 08:44:17.776 HYPERVISOR: exec_cmd: c3600 set_mac_addr Recherche cc04.7db3.0000 
+Jun 06 08:44:17.778 HYPERVISOR: exec_cmd: vm set_nvram Recherche 256 
+Jun 06 08:44:17.780 HYPERVISOR: exec_cmd: vm get_status Recherche 
+Jun 06 08:44:17.780 HYPERVISOR: exec_cmd: vm slot_add_binding Recherche 0 0 NM-4E 
+Jun 06 08:44:20.393 HYPERVISOR: exec_cmd: nio create_udp udp-94de8810-8d41-491e-bb5a-5265b478c345 10030 127.0.0.1 10031 
+Jun 06 08:44:20.620 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Recherche 0 1 udp-94de8810-8d41-491e-bb5a-5265b478c345 
+Jun 06 08:44:20.625 HYPERVISOR: exec_cmd: vm get_status Recherche 
+Jun 06 08:44:21.544 HYPERVISOR: exec_cmd: nio create_udp udp-1cdbe572-1bb6-42d6-996a-455445d79762 10050 127.0.0.1 10051 
+Jun 06 08:44:21.547 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Recherche 0 0 udp-1cdbe572-1bb6-42d6-996a-455445d79762 
+Jun 06 08:44:21.551 HYPERVISOR: exec_cmd: vm get_status Recherche 

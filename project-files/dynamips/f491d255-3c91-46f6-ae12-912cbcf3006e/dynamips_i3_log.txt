@@ -1,0 +1,85 @@
+May 23 09:14:51.944 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+May 23 09:14:51.944 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 32799.
+May 23 09:14:51.948 HYPERVISOR: exec_cmd: hypervisor version 
+May 23 09:14:51.950 HYPERVISOR: exec_cmd: hypervisor working_dir /home/iut45/Etudiants/o22401110/SAE/SAE RESEAU/sae/project-files/dynamips 
+May 23 09:14:51.950 GENERAL: working_dir=/home/iut45/Etudiants/o22401110/SAE/SAE RESEAU/sae/project-files/dynamips
+May 23 09:14:51.950 HYPERVISOR: exec_cmd: hypervisor working_dir /home/iut45/Etudiants/o22401110/SAE/SAE RESEAU/sae/project-files/dynamips/0646e3aa-4d8c-4c8a-92a3-c31409afef9c 
+May 23 09:14:51.950 GENERAL: working_dir=/home/iut45/Etudiants/o22401110/SAE/SAE RESEAU/sae/project-files/dynamips/0646e3aa-4d8c-4c8a-92a3-c31409afef9c
+May 23 09:14:51.950 HYPERVISOR: exec_cmd: vm create R1 2 c3600 
+May 23 09:14:51.953 VM: VM R1 created.
+May 23 09:14:51.955 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5001 
+May 23 09:14:51.955 HYPERVISOR: exec_cmd: c3600 get_mac_addr R1 
+May 23 09:14:51.956 HYPERVISOR: exec_cmd: vm set_ios R1 /home/iut45/Etudiants/o22401110/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+May 23 09:14:51.957 HYPERVISOR: exec_cmd: vm get_status R1 
+May 23 09:14:51.957 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x60693818 
+May 23 09:14:51.959 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+May 23 09:14:51.963 HYPERVISOR: exec_cmd: vm get_status R1 
+May 23 09:14:51.963 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 0 NM-4E 
+May 23 09:14:52.039 HYPERVISOR: exec_cmd: vm set_ios R1 /home/iut45/Etudiants/o22401110/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+May 23 09:14:57.276 HYPERVISOR: exec_cmd: vm set_ios R1 /home/iut45/Etudiants/o22401110/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+May 23 09:14:57.279 HYPERVISOR: exec_cmd: vm rename R1 Commercial 
+May 23 09:14:57.383 HYPERVISOR: exec_cmd: vm set_ios Commercial /home/iut45/Etudiants/o22401110/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+May 23 09:15:34.978 HYPERVISOR: exec_cmd: vm set_ios Commercial /home/iut45/Etudiants/o22401110/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+May 23 09:15:52.828 HYPERVISOR: exec_cmd: nio create_udp udp-932b1aba-91ff-48a0-97f6-93193bcc6538 10010 127.0.0.1 10011 
+May 23 09:15:53.069 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Commercial 0 0 udp-932b1aba-91ff-48a0-97f6-93193bcc6538 
+May 23 09:15:53.072 HYPERVISOR: exec_cmd: vm get_status Commercial 
+May 23 09:15:55.145 HYPERVISOR: exec_cmd: vm set_ios Commercial /home/iut45/Etudiants/o22401110/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+May 23 09:16:01.407 HYPERVISOR: exec_cmd: nio create_udp udp-1b0ee305-af53-4f16-b28e-96d8f14e232c 10016 127.0.0.1 10017 
+May 23 09:16:01.409 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Commercial 0 1 udp-1b0ee305-af53-4f16-b28e-96d8f14e232c 
+May 23 09:16:01.412 HYPERVISOR: exec_cmd: vm get_status Commercial 
+May 23 09:16:04.353 HYPERVISOR: exec_cmd: vm set_ios Commercial /home/iut45/Etudiants/o22401110/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+May 23 09:16:07.757 HYPERVISOR: exec_cmd: vm set_ios Commercial /home/iut45/Etudiants/o22401110/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+May 23 09:16:08.627 HYPERVISOR: exec_cmd: vm set_ios Commercial /home/iut45/Etudiants/o22401110/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+May 23 09:18:23.473 HYPERVISOR: exec_cmd: nio create_udp udp-1e332ee7-9352-4159-9b9f-7a4a79f974b2 10034 127.0.0.1 10035 
+May 23 09:18:23.475 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Commercial 0 2 udp-1e332ee7-9352-4159-9b9f-7a4a79f974b2 
+May 23 09:18:23.478 HYPERVISOR: exec_cmd: vm get_status Commercial 
+May 23 09:18:31.360 HYPERVISOR: exec_cmd: vm set_ios Commercial /home/iut45/Etudiants/o22401110/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+May 23 09:18:35.818 HYPERVISOR: exec_cmd: vm set_ios Commercial /home/iut45/Etudiants/o22401110/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+May 23 09:18:36.532 HYPERVISOR: exec_cmd: vm set_ios Commercial /home/iut45/Etudiants/o22401110/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+May 23 09:24:52.943 HYPERVISOR: exec_cmd: vm set_ios Commercial /home/iut45/Etudiants/o22401110/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+May 23 09:28:31.648 HYPERVISOR: exec_cmd: vm set_ios Commercial /home/iut45/Etudiants/o22401110/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+May 23 09:28:32.065 HYPERVISOR: exec_cmd: vm set_ios Commercial /home/iut45/Etudiants/o22401110/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+May 23 09:28:32.445 HYPERVISOR: exec_cmd: vm set_ios Commercial /home/iut45/Etudiants/o22401110/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+May 23 09:34:15.497 HYPERVISOR: exec_cmd: vm set_ios Commercial /home/iut45/Etudiants/o22401110/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+May 23 09:34:18.954 HYPERVISOR: exec_cmd: vm set_ios Commercial /home/iut45/Etudiants/o22401110/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+May 23 09:40:06.110 HYPERVISOR: exec_cmd: vm set_ios Commercial /home/iut45/Etudiants/o22401110/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+May 23 09:42:58.222 HYPERVISOR: exec_cmd: vm get_status Commercial 
+May 23 09:42:58.223 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding Commercial 0 1 
+May 23 09:42:58.226 HYPERVISOR: exec_cmd: nio delete udp-1b0ee305-af53-4f16-b28e-96d8f14e232c 
+May 23 09:43:17.425 HYPERVISOR: exec_cmd: vm get_status Commercial 
+May 23 09:43:17.426 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding Commercial 0 0 
+May 23 09:43:17.429 HYPERVISOR: exec_cmd: nio delete udp-932b1aba-91ff-48a0-97f6-93193bcc6538 
+May 23 09:43:27.706 HYPERVISOR: exec_cmd: vm get_status Commercial 
+May 23 09:43:27.707 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding Commercial 0 2 
+May 23 09:43:27.710 HYPERVISOR: exec_cmd: nio delete udp-1e332ee7-9352-4159-9b9f-7a4a79f974b2 
+May 23 09:43:44.867 HYPERVISOR: exec_cmd: nio create_udp udp-ca5c2563-7d56-4e0c-b4b2-85eca62373b8 10008 127.0.0.1 10009 
+May 23 09:43:44.870 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Commercial 0 0 udp-ca5c2563-7d56-4e0c-b4b2-85eca62373b8 
+May 23 09:43:44.872 HYPERVISOR: exec_cmd: vm get_status Commercial 
+May 23 09:43:50.701 HYPERVISOR: exec_cmd: nio create_udp udp-62fadc0b-79fe-4c3b-900f-becf990dc45a 10016 127.0.0.1 10017 
+May 23 09:43:50.703 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Commercial 0 1 udp-62fadc0b-79fe-4c3b-900f-becf990dc45a 
+May 23 09:43:50.705 HYPERVISOR: exec_cmd: vm get_status Commercial 
+May 23 09:44:13.051 HYPERVISOR: exec_cmd: vm get_status Commercial 
+May 23 09:44:13.051 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding Commercial 0 0 
+May 23 09:44:13.052 HYPERVISOR: exec_cmd: nio delete udp-ca5c2563-7d56-4e0c-b4b2-85eca62373b8 
+May 23 09:44:20.879 HYPERVISOR: exec_cmd: vm set_ios Commercial /home/iut45/Etudiants/o22401110/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+May 23 09:44:30.826 HYPERVISOR: exec_cmd: vm get_status Commercial 
+May 23 09:44:30.827 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding Commercial 0 1 
+May 23 09:44:30.830 HYPERVISOR: exec_cmd: nio delete udp-62fadc0b-79fe-4c3b-900f-becf990dc45a 
+May 23 09:44:45.576 HYPERVISOR: exec_cmd: nio create_udp udp-179e9d78-7ea2-4e85-b04d-a01c0c6222b4 10014 127.0.0.1 10015 
+May 23 09:44:45.580 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Commercial 0 0 udp-179e9d78-7ea2-4e85-b04d-a01c0c6222b4 
+May 23 09:44:45.582 HYPERVISOR: exec_cmd: vm get_status Commercial 
+May 23 09:45:28.788 HYPERVISOR: exec_cmd: nio create_udp udp-7d3dc995-c76a-4af4-a715-4c8ada9d1a1c 10034 127.0.0.1 10035 
+May 23 09:45:28.790 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Commercial 0 1 udp-7d3dc995-c76a-4af4-a715-4c8ada9d1a1c 
+May 23 09:45:28.792 HYPERVISOR: exec_cmd: vm get_status Commercial 
+May 23 09:45:41.901 HYPERVISOR: exec_cmd: nio create_udp udp-810addfd-eccc-4bc2-8f7b-2972948aa8bf 10040 127.0.0.1 10041 
+May 23 09:45:41.904 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Commercial 0 2 udp-810addfd-eccc-4bc2-8f7b-2972948aa8bf 
+May 23 09:45:41.907 HYPERVISOR: exec_cmd: vm get_status Commercial 
+May 23 09:59:29.242 HYPERVISOR: exec_cmd: vm get_status Commercial 
+May 23 09:59:29.242 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding Commercial 0 2 
+May 23 09:59:29.245 HYPERVISOR: exec_cmd: nio delete udp-810addfd-eccc-4bc2-8f7b-2972948aa8bf 
+May 23 09:59:32.825 HYPERVISOR: exec_cmd: vm get_status Commercial 
+May 23 09:59:32.825 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding Commercial 0 1 
+May 23 09:59:32.829 HYPERVISOR: exec_cmd: nio delete udp-7d3dc995-c76a-4af4-a715-4c8ada9d1a1c 
+May 23 10:07:14.582 HYPERVISOR: exec_cmd: nio create_udp udp-ee53e5f8-82a0-4b70-87c1-46c4e9bf08eb 10030 127.0.0.1 10031 
+May 23 10:07:14.586 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Commercial 0 1 udp-ee53e5f8-82a0-4b70-87c1-46c4e9bf08eb 
+May 23 10:07:14.589 HYPERVISOR: exec_cmd: vm get_status Commercial 

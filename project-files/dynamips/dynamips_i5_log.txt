@@ -1,0 +1,28 @@
+Jun 06 08:44:17.824 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Jun 06 08:44:17.824 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 35727.
+Jun 06 08:44:17.830 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 06 08:44:17.832 HYPERVISOR: exec_cmd: hypervisor working_dir /home/iut45/Etudiants/o22401110/GNS3/projects/sae/project-files/dynamips 
+Jun 06 08:44:17.832 GENERAL: working_dir=/home/iut45/Etudiants/o22401110/GNS3/projects/sae/project-files/dynamips
+Jun 06 08:44:17.832 HYPERVISOR: exec_cmd: hypervisor working_dir /home/iut45/Etudiants/o22401110/GNS3/projects/sae/project-files/dynamips/ff63c4be-a012-4b22-bc8f-c6d8b29e6b78 
+Jun 06 08:44:17.833 GENERAL: working_dir=/home/iut45/Etudiants/o22401110/GNS3/projects/sae/project-files/dynamips/ff63c4be-a012-4b22-bc8f-c6d8b29e6b78
+Jun 06 08:44:17.834 HYPERVISOR: exec_cmd: vm create DMZ 5 c3600 
+Jun 06 08:44:17.840 VM: VM DMZ created.
+Jun 06 08:44:17.841 HYPERVISOR: exec_cmd: vm set_con_tcp_port DMZ 5036 
+Jun 06 08:44:17.841 HYPERVISOR: exec_cmd: c3600 get_mac_addr DMZ 
+Jun 06 08:44:17.843 HYPERVISOR: exec_cmd: vm get_status DMZ 
+Jun 06 08:44:17.843 HYPERVISOR: exec_cmd: vm set_idle_pc DMZ 0x60693818 
+Jun 06 08:44:17.846 HYPERVISOR: exec_cmd: vm set_ios DMZ /home/iut45/Etudiants/o22401110/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+Jun 06 08:44:17.847 HYPERVISOR: exec_cmd: c3600 set_mac_addr DMZ cc05.7de2.0000 
+Jun 06 08:44:17.849 HYPERVISOR: exec_cmd: vm set_nvram DMZ 256 
+Jun 06 08:44:17.851 HYPERVISOR: exec_cmd: vm get_status DMZ 
+Jun 06 08:44:17.851 HYPERVISOR: exec_cmd: vm slot_add_binding DMZ 0 0 NM-4E 
+Jun 06 08:44:19.317 HYPERVISOR: exec_cmd: nio create_udp udp-aa570215-410b-43ca-b64a-aa2987d5450d 10014 127.0.0.1 10015 
+Jun 06 08:44:19.541 HYPERVISOR: exec_cmd: vm slot_add_nio_binding DMZ 0 0 udp-aa570215-410b-43ca-b64a-aa2987d5450d 
+Jun 06 08:44:19.543 HYPERVISOR: exec_cmd: vm get_status DMZ 
+Jun 06 08:46:22.830 HYPERVISOR: exec_cmd: nio create_udp udp-dbe65946-4467-4874-b851-2f3f0497dd21 10058 127.0.0.1 10059 
+Jun 06 08:46:22.833 HYPERVISOR: exec_cmd: vm slot_add_nio_binding DMZ 0 1 udp-dbe65946-4467-4874-b851-2f3f0497dd21 
+Jun 06 08:46:22.835 HYPERVISOR: exec_cmd: vm get_status DMZ 
+Jun 06 08:46:41.281 HYPERVISOR: exec_cmd: vm set_ios DMZ /home/iut45/Etudiants/o22401110/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+Jun 06 08:47:02.706 HYPERVISOR: exec_cmd: vm set_ios DMZ /home/iut45/Etudiants/o22401110/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+Jun 06 08:47:03.117 HYPERVISOR: exec_cmd: vm set_ios DMZ /home/iut45/Etudiants/o22401110/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+Jun 06 08:47:03.576 HYPERVISOR: exec_cmd: vm set_ios DMZ /home/iut45/Etudiants/o22401110/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 

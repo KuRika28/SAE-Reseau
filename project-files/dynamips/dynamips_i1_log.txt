@@ -1,0 +1,24 @@
+Jun 06 08:44:17.500 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Jun 06 08:44:17.500 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 48575.
+Jun 06 08:44:17.502 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 06 08:44:17.504 HYPERVISOR: exec_cmd: hypervisor working_dir /home/iut45/Etudiants/o22401110/GNS3/projects/sae/project-files/dynamips 
+Jun 06 08:44:17.504 GENERAL: working_dir=/home/iut45/Etudiants/o22401110/GNS3/projects/sae/project-files/dynamips
+Jun 06 08:44:17.504 HYPERVISOR: exec_cmd: hypervisor working_dir /home/iut45/Etudiants/o22401110/GNS3/projects/sae/project-files/dynamips/b7f3a56c-cda6-4bda-ad89-6238f50e8c17 
+Jun 06 08:44:17.504 GENERAL: working_dir=/home/iut45/Etudiants/o22401110/GNS3/projects/sae/project-files/dynamips/b7f3a56c-cda6-4bda-ad89-6238f50e8c17
+Jun 06 08:44:17.505 HYPERVISOR: exec_cmd: vm create Libre-service 1 c3600 
+Jun 06 08:44:17.520 VM: VM Libre-service created.
+Jun 06 08:44:17.522 HYPERVISOR: exec_cmd: vm set_con_tcp_port Libre-service 5032 
+Jun 06 08:44:17.522 HYPERVISOR: exec_cmd: c3600 get_mac_addr Libre-service 
+Jun 06 08:44:17.524 HYPERVISOR: exec_cmd: vm get_status Libre-service 
+Jun 06 08:44:17.524 HYPERVISOR: exec_cmd: vm set_idle_pc Libre-service 0x60693818 
+Jun 06 08:44:17.535 HYPERVISOR: exec_cmd: vm set_ios Libre-service /home/iut45/Etudiants/o22401110/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+Jun 06 08:44:17.537 HYPERVISOR: exec_cmd: c3600 set_mac_addr Libre-service cc01.7d19.0000 
+Jun 06 08:44:17.539 HYPERVISOR: exec_cmd: vm set_nvram Libre-service 256 
+Jun 06 08:44:17.544 HYPERVISOR: exec_cmd: vm get_status Libre-service 
+Jun 06 08:44:17.544 HYPERVISOR: exec_cmd: vm slot_add_binding Libre-service 0 0 NM-4E 
+Jun 06 08:44:18.489 HYPERVISOR: exec_cmd: nio create_udp udp-5d2597e7-1c9d-4c2b-b2be-7c52b850388a 10002 127.0.0.1 10003 
+Jun 06 08:44:18.718 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Libre-service 0 1 udp-5d2597e7-1c9d-4c2b-b2be-7c52b850388a 
+Jun 06 08:44:18.720 HYPERVISOR: exec_cmd: vm get_status Libre-service 
+Jun 06 08:44:19.191 HYPERVISOR: exec_cmd: nio create_udp udp-77f0acdf-9071-4998-ac47-9908e0aaf20a 10010 127.0.0.1 10011 
+Jun 06 08:44:19.194 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Libre-service 0 0 udp-77f0acdf-9071-4998-ac47-9908e0aaf20a 
+Jun 06 08:44:19.197 HYPERVISOR: exec_cmd: vm get_status Libre-service 

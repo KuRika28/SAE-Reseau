@@ -1,0 +1,25 @@
+Jun 06 08:51:26.550 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Jun 06 08:51:26.550 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 53967.
+Jun 06 08:51:26.558 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 06 08:51:26.559 HYPERVISOR: exec_cmd: hypervisor working_dir /home/iut45/Etudiants/o22401110/GNS3/projects/sae/project-files/dynamips 
+Jun 06 08:51:26.559 GENERAL: working_dir=/home/iut45/Etudiants/o22401110/GNS3/projects/sae/project-files/dynamips
+Jun 06 08:51:26.559 HYPERVISOR: exec_cmd: hypervisor working_dir /home/iut45/Etudiants/o22401110/GNS3/projects/sae/project-files/dynamips/08e0b179-b05d-442d-999a-40a146fa7194 
+Jun 06 08:51:26.559 GENERAL: working_dir=/home/iut45/Etudiants/o22401110/GNS3/projects/sae/project-files/dynamips/08e0b179-b05d-442d-999a-40a146fa7194
+Jun 06 08:51:26.559 HYPERVISOR: exec_cmd: vm create R1 8 c3600 
+Jun 06 08:51:26.564 VM: VM R1 created.
+Jun 06 08:51:26.566 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5017 
+Jun 06 08:51:26.566 HYPERVISOR: exec_cmd: c3600 get_mac_addr R1 
+Jun 06 08:51:26.567 HYPERVISOR: exec_cmd: vm set_ios R1 /home/iut45/Etudiants/o22401110/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+Jun 06 08:51:26.571 HYPERVISOR: exec_cmd: vm get_status R1 
+Jun 06 08:51:26.571 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x60693818 
+Jun 06 08:51:26.573 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+Jun 06 08:51:26.578 HYPERVISOR: exec_cmd: vm get_status R1 
+Jun 06 08:51:26.578 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 0 NM-4E 
+Jun 06 08:51:26.678 HYPERVISOR: exec_cmd: vm set_ios R1 /home/iut45/Etudiants/o22401110/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+Jun 06 08:51:28.920 HYPERVISOR: exec_cmd: vm set_ios R1 /home/iut45/Etudiants/o22401110/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+Jun 06 08:51:32.610 HYPERVISOR: exec_cmd: vm set_ios R1 /home/iut45/Etudiants/o22401110/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+Jun 06 08:51:32.613 HYPERVISOR: exec_cmd: vm rename R1 DHCP 
+Jun 06 08:51:32.743 HYPERVISOR: exec_cmd: vm set_ios DHCP /home/iut45/Etudiants/o22401110/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+Jun 06 08:51:36.829 HYPERVISOR: exec_cmd: nio create_udp udp-baf78ca5-0b99-40f0-9ef7-1bc941f834bd 10074 127.0.0.1 10075 
+Jun 06 08:51:37.052 HYPERVISOR: exec_cmd: vm slot_add_nio_binding DHCP 0 0 udp-baf78ca5-0b99-40f0-9ef7-1bc941f834bd 
+Jun 06 08:51:37.055 HYPERVISOR: exec_cmd: vm get_status DHCP 

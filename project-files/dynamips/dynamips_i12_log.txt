@@ -1,0 +1,18 @@
+Jun 06 08:44:18.320 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Jun 06 08:44:18.320 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 48885.
+Jun 06 08:44:18.328 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 06 08:44:18.332 HYPERVISOR: exec_cmd: hypervisor working_dir /home/iut45/Etudiants/o22401110/GNS3/projects/sae/project-files/dynamips 
+Jun 06 08:44:18.332 GENERAL: working_dir=/home/iut45/Etudiants/o22401110/GNS3/projects/sae/project-files/dynamips
+Jun 06 08:44:18.332 HYPERVISOR: exec_cmd: ethsw create LAND 
+Jun 06 08:44:21.441 HYPERVISOR: exec_cmd: nio create_udp udp-fefae263-3592-4515-94d2-3f44290d78c1 10045 127.0.0.1 10044 
+Jun 06 08:44:21.441 HYPERVISOR: exec_cmd: ethsw add_nio LAND udp-fefae263-3592-4515-94d2-3f44290d78c1 
+Jun 06 08:44:21.448 HYPERVISOR: exec_cmd: ethsw set_access_port LAND udp-fefae263-3592-4515-94d2-3f44290d78c1 1 
+Jun 06 08:44:21.520 HYPERVISOR: exec_cmd: nio create_udp udp-939cd638-f7d1-4bd1-b565-a8e6def66509 10048 127.0.0.1 10049 
+Jun 06 08:44:21.520 HYPERVISOR: exec_cmd: ethsw add_nio LAND udp-939cd638-f7d1-4bd1-b565-a8e6def66509 
+Jun 06 08:44:21.530 HYPERVISOR: exec_cmd: ethsw set_access_port LAND udp-939cd638-f7d1-4bd1-b565-a8e6def66509 1 
+Jun 06 08:44:21.621 HYPERVISOR: exec_cmd: nio create_udp udp-e63eaf0a-8582-442d-b5b0-3dceea6f5dd8 10052 127.0.0.1 10053 
+Jun 06 08:44:21.621 HYPERVISOR: exec_cmd: ethsw add_nio LAND udp-e63eaf0a-8582-442d-b5b0-3dceea6f5dd8 
+Jun 06 08:44:21.629 HYPERVISOR: exec_cmd: ethsw set_access_port LAND udp-e63eaf0a-8582-442d-b5b0-3dceea6f5dd8 1 
+Jun 06 08:44:21.731 HYPERVISOR: exec_cmd: nio create_udp udp-52883f45-f994-4dc8-9dcc-74aa443bf046 10054 127.0.0.1 10055 
+Jun 06 08:44:21.731 HYPERVISOR: exec_cmd: ethsw add_nio LAND udp-52883f45-f994-4dc8-9dcc-74aa443bf046 
+Jun 06 08:44:21.750 HYPERVISOR: exec_cmd: ethsw set_access_port LAND udp-52883f45-f994-4dc8-9dcc-74aa443bf046 1 

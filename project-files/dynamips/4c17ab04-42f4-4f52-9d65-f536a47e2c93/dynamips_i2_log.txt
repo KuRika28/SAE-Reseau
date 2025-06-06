@@ -1,0 +1,78 @@
+May 23 09:14:37.430 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+May 23 09:14:37.430 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 37899.
+May 23 09:14:37.443 HYPERVISOR: exec_cmd: hypervisor version 
+May 23 09:14:37.446 HYPERVISOR: exec_cmd: hypervisor working_dir /home/iut45/Etudiants/o22401110/SAE/SAE RESEAU/sae/project-files/dynamips 
+May 23 09:14:37.446 GENERAL: working_dir=/home/iut45/Etudiants/o22401110/SAE/SAE RESEAU/sae/project-files/dynamips
+May 23 09:14:37.446 HYPERVISOR: exec_cmd: hypervisor working_dir /home/iut45/Etudiants/o22401110/SAE/SAE RESEAU/sae/project-files/dynamips/d33cd636-d8f6-4e6f-9f97-476dcdb2bf0f 
+May 23 09:14:37.446 GENERAL: working_dir=/home/iut45/Etudiants/o22401110/SAE/SAE RESEAU/sae/project-files/dynamips/d33cd636-d8f6-4e6f-9f97-476dcdb2bf0f
+May 23 09:14:37.447 HYPERVISOR: exec_cmd: vm create R1 1 c3600 
+May 23 09:14:37.452 VM: VM R1 created.
+May 23 09:14:37.456 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5000 
+May 23 09:14:37.456 HYPERVISOR: exec_cmd: c3600 get_mac_addr R1 
+May 23 09:14:37.459 HYPERVISOR: exec_cmd: vm set_ios R1 /home/iut45/Etudiants/o22401110/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+May 23 09:14:37.462 HYPERVISOR: exec_cmd: vm get_status R1 
+May 23 09:14:37.462 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x60693818 
+May 23 09:14:37.465 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+May 23 09:14:37.472 HYPERVISOR: exec_cmd: vm get_status R1 
+May 23 09:14:37.472 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 0 NM-4E 
+May 23 09:14:37.571 HYPERVISOR: exec_cmd: vm set_ios R1 /home/iut45/Etudiants/o22401110/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+May 23 09:14:50.539 HYPERVISOR: exec_cmd: vm set_ios R1 /home/iut45/Etudiants/o22401110/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+May 23 09:14:50.543 HYPERVISOR: exec_cmd: vm rename R1 Libre-service 
+May 23 09:14:50.624 HYPERVISOR: exec_cmd: vm set_ios Libre-service /home/iut45/Etudiants/o22401110/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+May 23 09:15:34.373 HYPERVISOR: exec_cmd: vm set_ios Libre-service /home/iut45/Etudiants/o22401110/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+May 23 09:15:36.483 HYPERVISOR: exec_cmd: vm set_ios Libre-service /home/iut45/Etudiants/o22401110/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+May 23 09:15:42.842 HYPERVISOR: exec_cmd: vm set_ios Libre-service /home/iut45/Etudiants/o22401110/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+May 23 09:15:50.577 HYPERVISOR: exec_cmd: nio create_udp udp-fbde2b9d-0085-4b90-9ef9-427b5e18fca9 10004 127.0.0.1 10005 
+May 23 09:15:50.805 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Libre-service 0 0 udp-fbde2b9d-0085-4b90-9ef9-427b5e18fca9 
+May 23 09:15:50.808 HYPERVISOR: exec_cmd: vm get_status Libre-service 
+May 23 09:15:52.816 HYPERVISOR: exec_cmd: nio create_udp udp-a0605f1f-957f-44f5-8b9e-6684a080503f 10008 127.0.0.1 10009 
+May 23 09:15:52.818 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Libre-service 0 1 udp-a0605f1f-957f-44f5-8b9e-6684a080503f 
+May 23 09:15:52.820 HYPERVISOR: exec_cmd: vm get_status Libre-service 
+May 23 09:16:03.583 HYPERVISOR: exec_cmd: vm set_ios Libre-service /home/iut45/Etudiants/o22401110/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+May 23 09:18:20.556 HYPERVISOR: exec_cmd: nio create_udp udp-a33117da-110d-4997-9e51-6fbd47f8d4fc 10028 127.0.0.1 10029 
+May 23 09:18:20.560 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Libre-service 0 2 udp-a33117da-110d-4997-9e51-6fbd47f8d4fc 
+May 23 09:18:20.563 HYPERVISOR: exec_cmd: vm get_status Libre-service 
+May 23 09:18:33.756 HYPERVISOR: exec_cmd: vm set_ios Libre-service /home/iut45/Etudiants/o22401110/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+May 23 09:28:31.652 HYPERVISOR: exec_cmd: vm set_ios Libre-service /home/iut45/Etudiants/o22401110/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+May 23 09:28:32.082 HYPERVISOR: exec_cmd: vm set_ios Libre-service /home/iut45/Etudiants/o22401110/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+May 23 09:28:32.453 HYPERVISOR: exec_cmd: vm set_ios Libre-service /home/iut45/Etudiants/o22401110/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+May 23 09:42:16.716 HYPERVISOR: exec_cmd: vm get_status Libre-service 
+May 23 09:42:16.716 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding Libre-service 0 2 
+May 23 09:42:16.718 HYPERVISOR: exec_cmd: nio delete udp-a33117da-110d-4997-9e51-6fbd47f8d4fc 
+May 23 09:43:17.412 HYPERVISOR: exec_cmd: vm get_status Libre-service 
+May 23 09:43:17.412 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding Libre-service 0 1 
+May 23 09:43:17.416 HYPERVISOR: exec_cmd: nio delete udp-a0605f1f-957f-44f5-8b9e-6684a080503f 
+May 23 09:43:20.378 HYPERVISOR: exec_cmd: vm get_status Libre-service 
+May 23 09:43:20.378 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding Libre-service 0 0 
+May 23 09:43:20.382 HYPERVISOR: exec_cmd: nio delete udp-fbde2b9d-0085-4b90-9ef9-427b5e18fca9 
+May 23 09:43:38.342 HYPERVISOR: exec_cmd: nio create_udp udp-01632384-2374-4c27-9bb5-2a7793b4d2cf 10004 127.0.0.1 10005 
+May 23 09:43:38.345 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Libre-service 0 0 udp-01632384-2374-4c27-9bb5-2a7793b4d2cf 
+May 23 09:43:38.347 HYPERVISOR: exec_cmd: vm get_status Libre-service 
+May 23 09:43:44.891 HYPERVISOR: exec_cmd: nio create_udp udp-c49b63b9-770d-4c3b-ad82-ab7f95c6eb2e 10010 127.0.0.1 10011 
+May 23 09:43:44.894 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Libre-service 0 1 udp-c49b63b9-770d-4c3b-ad82-ab7f95c6eb2e 
+May 23 09:43:44.896 HYPERVISOR: exec_cmd: vm get_status Libre-service 
+May 23 09:44:13.056 HYPERVISOR: exec_cmd: vm get_status Libre-service 
+May 23 09:44:13.056 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding Libre-service 0 1 
+May 23 09:44:13.059 HYPERVISOR: exec_cmd: nio delete udp-c49b63b9-770d-4c3b-ad82-ab7f95c6eb2e 
+May 23 09:44:22.310 HYPERVISOR: exec_cmd: vm set_ios Libre-service /home/iut45/Etudiants/o22401110/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+May 23 09:44:33.059 HYPERVISOR: exec_cmd: vm get_status Libre-service 
+May 23 09:44:33.059 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding Libre-service 0 0 
+May 23 09:44:33.063 HYPERVISOR: exec_cmd: nio delete udp-01632384-2374-4c27-9bb5-2a7793b4d2cf 
+May 23 09:44:36.948 HYPERVISOR: exec_cmd: nio create_udp udp-c2ee2c57-1bb8-4c45-8fd8-03adf18ada98 10002 127.0.0.1 10003 
+May 23 09:44:36.951 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Libre-service 0 0 udp-c2ee2c57-1bb8-4c45-8fd8-03adf18ada98 
+May 23 09:44:36.956 HYPERVISOR: exec_cmd: vm get_status Libre-service 
+May 23 09:45:02.732 HYPERVISOR: exec_cmd: nio create_udp udp-20a55940-0534-4f20-b06c-925dc32d21e7 10028 127.0.0.1 10029 
+May 23 09:45:02.735 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Libre-service 0 1 udp-20a55940-0534-4f20-b06c-925dc32d21e7 
+May 23 09:45:02.739 HYPERVISOR: exec_cmd: vm get_status Libre-service 
+May 23 09:45:28.766 HYPERVISOR: exec_cmd: nio create_udp udp-a9c1819b-22e5-4a36-8e6e-3eddcc39a6ac 10032 127.0.0.1 10033 
+May 23 09:45:28.769 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Libre-service 0 2 udp-a9c1819b-22e5-4a36-8e6e-3eddcc39a6ac 
+May 23 09:45:28.771 HYPERVISOR: exec_cmd: vm get_status Libre-service 
+May 23 09:59:24.123 HYPERVISOR: exec_cmd: vm get_status Libre-service 
+May 23 09:59:24.124 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding Libre-service 0 1 
+May 23 09:59:24.127 HYPERVISOR: exec_cmd: nio delete udp-20a55940-0534-4f20-b06c-925dc32d21e7 
+May 23 09:59:32.817 HYPERVISOR: exec_cmd: vm get_status Libre-service 
+May 23 09:59:32.817 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding Libre-service 0 2 
+May 23 09:59:32.818 HYPERVISOR: exec_cmd: nio delete udp-a9c1819b-22e5-4a36-8e6e-3eddcc39a6ac 
+May 23 10:07:09.325 HYPERVISOR: exec_cmd: nio create_udp udp-4369d895-8c4a-426a-b02c-037cf98d051d 10026 127.0.0.1 10027 
+May 23 10:07:09.328 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Libre-service 0 1 udp-4369d895-8c4a-426a-b02c-037cf98d051d 
+May 23 10:07:09.330 HYPERVISOR: exec_cmd: vm get_status Libre-service 
