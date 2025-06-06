@@ -438,38 +438,6 @@
             },
             {
                 "filters": {},
-                "link_id": "44e1d865-d069-4be5-ab69-2c691be49199",
-                "link_style": {},
-                "nodes": [
-                    {
-                        "adapter_number": 0,
-                        "label": {
-                            "rotation": 0,
-                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                            "text": "e0/2",
-                            "x": 72,
-                            "y": 18
-                        },
-                        "node_id": "f491d255-3c91-46f6-ae12-912cbcf3006e",
-                        "port_number": 2
-                    },
-                    {
-                        "adapter_number": 0,
-                        "label": {
-                            "rotation": 0,
-                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                            "text": "e0",
-                            "x": -29,
-                            "y": 29
-                        },
-                        "node_id": "536d9da6-43ed-4cf9-abdd-b6b55d86548f",
-                        "port_number": 0
-                    }
-                ],
-                "suspend": false
-            },
-            {
-                "filters": {},
                 "link_id": "48c513a6-8b63-46cf-82b1-c0984b34c333",
                 "link_style": {},
                 "nodes": [
@@ -720,6 +688,38 @@
                         },
                         "node_id": "d0940709-cb0b-44f1-b0e3-cf68fc4bb8e3",
                         "port_number": 5
+                    }
+                ],
+                "suspend": false
+            },
+            {
+                "filters": {},
+                "link_id": "cff8c390-9d57-4f9d-a84b-22d5eb1d3133",
+                "link_style": {},
+                "nodes": [
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e0/1",
+                            "x": 72,
+                            "y": 18
+                        },
+                        "node_id": "f491d255-3c91-46f6-ae12-912cbcf3006e",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e0",
+                            "x": -4,
+                            "y": 19
+                        },
+                        "node_id": "536d9da6-43ed-4cf9-abdd-b6b55d86548f",
+                        "port_number": 0
                     }
                 ],
                 "suspend": false
@@ -1552,12 +1552,12 @@
                 "label": {
                     "rotation": 0,
                     "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                    "text": "LANR2",
-                    "x": 10,
+                    "text": "LANR",
+                    "x": 13,
                     "y": -25
                 },
                 "locked": false,
-                "name": "LANR2",
+                "name": "LANR",
                 "node_id": "e4c6b74e-6263-4c23-8556-8ad571742b05",
                 "node_type": "ethernet_switch",
                 "port_name_format": "Ethernet{0}",
@@ -1632,12 +1632,12 @@
                 "label": {
                     "rotation": 0,
                     "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                    "text": "Switch1",
-                    "x": 29,
+                    "text": "LANDMZ",
+                    "x": 17,
                     "y": -32
                 },
                 "locked": false,
-                "name": "Switch1",
+                "name": "LANDMZ",
                 "node_id": "ad066091-54ce-427c-a4ba-aed145999d7b",
                 "node_type": "ethernet_switch",
                 "port_name_format": "Ethernet{0}",
@@ -1712,12 +1712,12 @@
                 "label": {
                     "rotation": 0,
                     "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                    "text": "Switch2",
-                    "x": 6,
+                    "text": "Switch",
+                    "x": 9,
                     "y": -25
                 },
                 "locked": false,
-                "name": "Switch2",
+                "name": "Switch",
                 "node_id": "d0940709-cb0b-44f1-b0e3-cf68fc4bb8e3",
                 "node_type": "ethernet_switch",
                 "port_name_format": "Ethernet{0}",
