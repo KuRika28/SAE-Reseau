@@ -7,7 +7,6 @@ interface e0/0
 ip address 10.0.0.1 255.255.255.0
 no shutdown
 end
-end
 
 conf term
 router rip
@@ -169,6 +168,7 @@ router rip
 version 2
 no auto-summary
 network 54.98.153.128
+network 54.98.153.0
 ```
 
 ## Configuration des PC statiques
