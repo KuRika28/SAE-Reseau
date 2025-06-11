@@ -182,6 +182,9 @@ end
 conf term
 interface e0/0
 ip access-group ls in
+
+interface e0/1
+ip access-group ls in
 end
 ```
 
@@ -195,6 +198,9 @@ end
 
 conf term
 interface e0/0
+ip access-group r in
+
+interface e0/1
 ip access-group r in
 end
 ```
