@@ -7,7 +7,7 @@ interface e0/0 (connectée au switch)
 ip address 10.0.0. 255.255.255.0
 no shutdown
 interface e0/1 (connecté à LANDMZ)
-ip address 54
+ip address 54.98.153.93
 end
 ```
 
@@ -92,4 +92,25 @@ lease 1
 default-router 54.98.153.196
 ip dhcp excluded-address 54.98.153.129 54.98.153.138
 
+```
+
+## Configuration des PC statiques
+### Sur PCLS
+```
+ip 54.98.152.130/25
+```
+
+### Sur PCDS
+```
+ip 554.98.153.3/25
+```
+
+### Sur PCRS
+```
+ip 54.98.153.130
+```
+
+### Sur PCCS
+```
+ip 54.98.152.2/25
 ```
