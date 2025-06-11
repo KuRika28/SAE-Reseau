@@ -61,6 +61,12 @@ ip address 54.98.152.1 255.255.255.128
 no shutdown
 ip helper-address 10.0.0.6
 end
+
+conf term
+router rip
+version 2
+no auto-summary
+network 54.98.152.0
 ```
 
 ### Sur DMZ
@@ -75,6 +81,12 @@ ip address 54.98.153.193 255.255.255.192
 no shutdown
 ip helper-address 10.0.0.6
 end
+
+conf term
+router rip
+version 2
+no auto-summary
+network 54.98.153.192
 ```
 
 ### Sur Libre-service :
@@ -89,6 +101,12 @@ ip address 54.98.152.129 255.255.255.128
 no shutdown
 ip helper-address 10.0.0.6
 end
+
+conf term
+router rip
+version 2
+no auto-summary
+network 54.98.152.128
 ```
 
 ### Sur Développement :
@@ -103,6 +121,12 @@ ip address 54.98.153.1 255.255.255.128
 no shutdown
 ip helper-address 10.0.0.6
 end
+
+conf term
+router rip
+version 2
+no auto-summary
+network 54.98.153.0
 ```
 
 ### Sur Recherche :
@@ -117,6 +141,12 @@ ip address 54.98.153.129 255.255.255.192
 no shutdown
 ip helper-address 54.98.153.1
 end
+
+conf term
+router rip
+version 2
+no auto-summary
+network 54.98.153.128
 ```
 
 ## Configuration des PC statiques
