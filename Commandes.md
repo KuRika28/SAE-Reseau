@@ -1,21 +1,32 @@
 ## Configuration des interfaces des routeurs avec les adresses IP
 
+### Sur Internet
+```
+conf term
+interface e0/0 (connectée à Internet)
+ip address 10.0.0.1 255.255.255.0
+no shutdown
+end
+```
+
 ### Sur DMZ
 ```
 conf term
-interface e0/0 (connectée au switch)
-ip address 10.0.0. 255.255.255.0
+interface e0/0 (connectée à Internet)
+ip address 10.0.0.2 255.255.255.0
 no shutdown
-interface e0/1 (connecté à LANDMZ)
-ip address 54
+
+interface e0/1 (connectée à DMZ)
+ip address 54.98.153.193 255.255.255.192
+no shutdown
 end
 ```
 
 ### Sur Libre-service :
 ```
 conf term
-interface e0/0 (connectée au switch)
-ip address 54.98.153.194 255.255.255.192
+interface e0/0 (connectée à Internet)
+ip address 10.0.0.3 255.255.255.0
 no shutdown
 
 interface e0/1 (connectée à LAN Libre-service)
@@ -27,8 +38,8 @@ end
 ### Sur Commercial :
 ```
 conf term
-interface e0/0 (connectée au switch)
-ip address 54.98.153.195 255.255.255.192
+interface e0/0 (connectée à Internet)
+ip address 10.0.0.4 255.255.255.0
 no shutdown
 
 interface e0/1 (connectée à LAN Commercial)
@@ -40,8 +51,8 @@ end
 ### Sur Développement :
 ```
 conf term
-interface e0/0 (connectée au switch)
-ip address 54.98.153.196 255.255.255.192
+interface e0/0 (connectée à Internet)
+ip address 10.0.0.5 255.255.255.0
 no shutdown
 
 interface e0/1 (connectée au LAN Développement)
@@ -66,6 +77,10 @@ end
 ### Sur DHCP :
 ```
 conf term
+interface e0/0 (connectée à Internet)
+ip address 10.0.0.6 255.255.255.0
+no shutdown
+
 service dhcp
 
 ip dhcp pool land
@@ -87,9 +102,15 @@ default-router 54.98.153.195
 ip dhcp excluded-address 54.98.152.1 54.98.152.10
 
 ip dhcp pool lanr
-network 54.98.153.128 255.255.255.128
+network 54.98.153.128 255.255.255.192
 lease 1
 default-router 54.98.153.196
 ip dhcp excluded-address 54.98.153.129 54.98.153.138
+
+ip dhcp pool landmz
+network 54.98.153.192 255.255.255.192
+lease 1
+default-router 54.98.153.193
+ip dhcp excluded-address 54.98.153.193 54.98.153.202
 
 ```
