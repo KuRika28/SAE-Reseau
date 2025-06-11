@@ -9,76 +9,6 @@ no shutdown
 end
 ```
 
-### Sur DMZ
-```
-conf term
-interface e0/0 (connectée à Internet)
-ip address 10.0.0.2 255.255.255.0
-no shutdown
-
-interface e0/1 (connectée à DMZ)
-ip address 54.98.153.193 255.255.255.192
-no shutdown
-ip helper-address 10.0.0.6
-end
-```
-
-### Sur Libre-service :
-```
-conf term
-interface e0/0 (connectée à Internet)
-ip address 10.0.0.3 255.255.255.0
-no shutdown
-
-interface e0/1 (connectée à LAN Libre-service)
-ip address 54.98.152.129 255.255.255.128
-no shutdown
-ip helper-address 10.0.0.6
-end
-```
-
-### Sur Commercial :
-```
-conf term
-interface e0/0 (connectée à Internet)
-ip address 10.0.0.4 255.255.255.0
-no shutdown
-
-interface e0/1 (connectée à LAN Commercial)
-ip address 54.98.152.1 255.255.255.128
-no shutdown
-ip helper-address 10.0.0.6
-end
-```
-
-### Sur Développement :
-```
-conf term
-interface e0/0 (connectée à Internet)
-ip address 10.0.0.5 255.255.255.0
-no shutdown
-
-interface e0/1 (connectée au LAN Développement)
-ip address 54.98.153.1 255.255.255.128
-no shutdown
-ip helper-address 10.0.0.6
-end
-```
-
-### Sur Recherche :
-```
-conf term
-interface e0/0 (connectée à LAN Développement)
-ip address 54.98.153.2 255.255.255.128
-no shutdown
-
-interface e0/1 (connectée à LAN Recherche)
-ip address 54.98.153.129 255.255.255.192
-no shutdown
-ip helper-address 54.98.153.1
-end
-```
-
 ### Sur DHCP :
 ```
 conf term
@@ -117,6 +47,76 @@ network 54.98.153.192 255.255.255.192
 lease 1
 default-router 54.98.153.193
 ip dhcp excluded-address 54.98.153.193 54.98.153.202
+```
+
+### Sur Commercial :
+```
+conf term
+interface e0/0 (connectée à Internet)
+ip address 10.0.0.4 255.255.255.0
+no shutdown
+
+interface e0/1 (connectée à LAN Commercial)
+ip address 54.98.152.1 255.255.255.128
+no shutdown
+ip helper-address 10.0.0.6
+end
+```
+
+### Sur DMZ
+```
+conf term
+interface e0/0 (connectée à Internet)
+ip address 10.0.0.2 255.255.255.0
+no shutdown
+
+interface e0/1 (connectée à DMZ)
+ip address 54.98.153.193 255.255.255.192
+no shutdown
+ip helper-address 10.0.0.6
+end
+```
+
+### Sur Libre-service :
+```
+conf term
+interface e0/0 (connectée à Internet)
+ip address 10.0.0.3 255.255.255.0
+no shutdown
+
+interface e0/1 (connectée à LAN Libre-service)
+ip address 54.98.152.129 255.255.255.128
+no shutdown
+ip helper-address 10.0.0.6
+end
+```
+
+### Sur Développement :
+```
+conf term
+interface e0/0 (connectée à Internet)
+ip address 10.0.0.5 255.255.255.0
+no shutdown
+
+interface e0/1 (connectée au LAN Développement)
+ip address 54.98.153.1 255.255.255.128
+no shutdown
+ip helper-address 10.0.0.6
+end
+```
+
+### Sur Recherche :
+```
+conf term
+interface e0/0 (connectée à LAN Développement)
+ip address 54.98.153.2 255.255.255.128
+no shutdown
+
+interface e0/1 (connectée à LAN Recherche)
+ip address 54.98.153.129 255.255.255.192
+no shutdown
+ip helper-address 54.98.153.1
+end
 ```
 
 ## Configuration des PC statiques
