@@ -7,6 +7,14 @@ interface e0/0
 ip address 10.0.0.1 255.255.255.0
 no shutdown
 end
+end
+
+conf term
+router rip
+version 2
+no auto-summary
+network 54.98.152.0
+network 10.0.0.0
 ```
 
 ### Sur DHCP :
@@ -15,7 +23,17 @@ conf term
 interface e0/0
 ip address 10.0.0.6 255.255.255.0
 no shutdown
+end
 
+conf term
+router rip
+version 2
+no auto-summary
+network 54.98.152.0
+network 10.0.0.0
+end
+
+conf term
 service dhcp
 
 ip dhcp pool land
