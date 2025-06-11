@@ -139,7 +139,7 @@ no shutdown
 interface e0/1 (connectée à LAN Recherche)
 ip address 54.98.153.129 255.255.255.192
 no shutdown
-ip helper-address 54.98.153.1
+ip helper-address 10.0.0.6
 end
 
 conf term
@@ -199,4 +199,15 @@ ip access-group r in
 end
 ```
 
-## Relais DHCP
+### Sur DMZ
+```
+conf term
+ip access-list standard dmz
+deny any
+end
+
+conf term
+interface e0/0
+ip access-group dmz in
+end
+```
