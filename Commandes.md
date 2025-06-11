@@ -139,7 +139,7 @@ no shutdown
 interface e0/1 (connectée à LAN Recherche)
 ip address 54.98.153.129 255.255.255.192
 no shutdown
-ip helper-address 54.98.153.1
+ip helper-address 10.0.0.6
 end
 
 conf term
@@ -168,4 +168,46 @@ ip 54.98.153.130
 ### Sur PCCS
 ```
 ip 54.98.152.2/25
+```
+
+## Pare-feux
+### Sur Libre-service
+```
+conf term
+ip access-list standard ls
+permit 10.0.0.1 0.0.0.255
+deny any
+end
+
+conf term
+interface e0/0
+ip access-group ls in
+end
+```
+
+### Sur Recherche
+```
+conf term
+ip access-list standard r
+permit 54.98.153.0 0.0.127
+deny any
+end
+
+conf term
+interface e0/0
+ip access-group r in
+end
+```
+
+### Sur DMZ
+```
+conf term
+ip access-list standard dmz
+deny any
+end
+
+conf term
+interface e0/0
+ip access-group dmz in
+end
 ```
