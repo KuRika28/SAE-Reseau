@@ -19,6 +19,7 @@ no shutdown
 interface e0/1 (connectée à DMZ)
 ip address 54.98.153.193 255.255.255.192
 no shutdown
+ip helper-address 10.0.0.6
 end
 ```
 
@@ -32,6 +33,7 @@ no shutdown
 interface e0/1 (connectée à LAN Libre-service)
 ip address 54.98.152.129 255.255.255.128
 no shutdown
+ip helper-address 10.0.0.6
 end
 ```
 
@@ -45,6 +47,7 @@ no shutdown
 interface e0/1 (connectée à LAN Commercial)
 ip address 54.98.152.1 255.255.255.128
 no shutdown
+ip helper-address 10.0.0.6
 end
 ```
 
@@ -58,6 +61,7 @@ no shutdown
 interface e0/1 (connectée au LAN Développement)
 ip address 54.98.153.1 255.255.255.128
 no shutdown
+ip helper-address 10.0.0.6
 end
 ```
 
@@ -71,6 +75,7 @@ no shutdown
 interface e0/1 (connectée à LAN Recherche)
 ip address 54.98.153.129 255.255.255.192
 no shutdown
+ip helper-address 54.98.153.1
 end
 ```
 
