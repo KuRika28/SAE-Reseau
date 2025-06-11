@@ -4,12 +4,10 @@
 ```
 conf term
 interface e0/0 (connectée au switch)
-ip address 54.98.153.193 255.255.255.192
+ip address 10.0.0. 255.255.255.0
 no shutdown
-
-.
-.
-.
+interface e0/1 (connecté à LANDMZ)
+ip address 54
 end
 ```
 
@@ -74,19 +72,24 @@ ip dhcp pool land
 network 54.98.153.0 255.255.255.128
 lease 1
 default-router 54.98.153.196
+ip dhcp excluded-address 54.98.153.1 54.98.153.10
 
 ip dhcp pool lanl
 network 54.98.152.128 255.255.255.128
 lease 1
 default-router 54.98.153.194
+ip dhcp excluded-address 54.98.152.129 54.98.152.138
 
 ip dhcp pool lanc
 network 54.98.152.0 255.255.255.128
 lease 1
 default-router 54.98.153.195
+ip dhcp excluded-address 54.98.152.1 54.98.152.10
 
 ip dhcp pool lanr
 network 54.98.153.128 255.255.255.128
 lease 1
 default-router 54.98.153.196
+ip dhcp excluded-address 54.98.153.129 54.98.153.138
+
 ```
