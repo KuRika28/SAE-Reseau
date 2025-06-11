@@ -64,3 +64,29 @@ ip address 54.98.153.129 255.255.255.192
 no shutdown
 end
 ```
+
+### Sur DHCP :
+```
+conf term
+service dhcp
+
+ip dhcp pool land
+network 54.98.153.0 255.255.255.128
+lease 1
+default-router 54.98.153.196
+
+ip dhcp pool lanl
+network 54.98.152.128 255.255.255.128
+lease 1
+default-router 54.98.153.194
+
+ip dhcp pool lanc
+network 54.98.152.0 255.255.255.128
+lease 1
+default-router 54.98.153.195
+
+ip dhcp pool lanr
+network 54.98.153.128 255.255.255.128
+lease 1
+default-router 54.98.153.196
+```
