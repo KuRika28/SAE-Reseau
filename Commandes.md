@@ -175,7 +175,7 @@ ip 54.98.153.130/25 54.98.153.129
 ip 54.98.152.2/25 54.98.152.1
 ```
 
-## Pare-feux
+## Pare-feux
 ### Sur Libre-service
 ```
 conf term
@@ -190,7 +190,7 @@ ip access-group ls in
 end
 ```
 
-### Sur Recherche
+### Sur Recherche
 ```
 conf term
 ip access-list standard r
@@ -204,7 +204,7 @@ ip access-group r in
 end
 ```
 
-### Sur DMZ
+### Sur DMZ
 ```
 conf term
 ip access-list standard dmz
