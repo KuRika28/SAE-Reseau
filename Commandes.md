@@ -3,19 +3,36 @@
 ### Sur Internet
 ```
 conf term
-interface e0/0 (connectée à Internet)
+interface e0/0
 ip address 10.0.0.1 255.255.255.0
 no shutdown
 end
+
+conf term
+router rip
+version 2
+no auto-summary
+network 54.98.152.0
+network 10.0.0.0
 ```
 
 ### Sur DHCP :
 ```
 conf term
-interface e0/0 (connectée à Internet)
+interface e0/0
 ip address 10.0.0.6 255.255.255.0
 no shutdown
+end
 
+conf term
+router rip
+version 2
+no auto-summary
+network 54.98.152.0
+network 10.0.0.0
+end
+
+conf term
 service dhcp
 
 ip dhcp pool land
@@ -52,11 +69,11 @@ ip dhcp excluded-address 54.98.153.193 54.98.153.202
 ### Sur Commercial :
 ```
 conf term
-interface e0/0 (connectée à Internet)
+interface e0/0 
 ip address 10.0.0.4 255.255.255.0
 no shutdown
 
-interface e0/1 (connectée à LAN Commercial)
+interface e0/1 
 ip address 54.98.152.1 255.255.255.128
 no shutdown
 ip helper-address 10.0.0.6
@@ -67,16 +84,17 @@ router rip
 version 2
 no auto-summary
 network 54.98.152.0
+network 10.0.0.0
 ```
 
 ### Sur DMZ
 ```
 conf term
-interface e0/0 (connectée à Internet)
+interface e0/0
 ip address 10.0.0.2 255.255.255.0
 no shutdown
 
-interface e0/1 (connectée à DMZ)
+interface e0/1
 ip address 54.98.153.193 255.255.255.192
 no shutdown
 ip helper-address 10.0.0.6
@@ -87,16 +105,17 @@ router rip
 version 2
 no auto-summary
 network 54.98.153.192
+network 10.0.0.0
 ```
 
 ### Sur Libre-service :
 ```
 conf term
-interface e0/0 (connectée à Internet)
+interface e0/0
 ip address 10.0.0.3 255.255.255.0
 no shutdown
 
-interface e0/1 (connectée à LAN Libre-service)
+interface e0/1
 ip address 54.98.152.129 255.255.255.128
 no shutdown
 ip helper-address 10.0.0.6
@@ -107,16 +126,17 @@ router rip
 version 2
 no auto-summary
 network 54.98.152.128
+network 10.0.0.0
 ```
 
 ### Sur Développement :
 ```
 conf term
-interface e0/0 (connectée à Internet)
+interface e0/0
 ip address 10.0.0.5 255.255.255.0
 no shutdown
 
-interface e0/1 (connectée au LAN Développement)
+interface e0/1
 ip address 54.98.153.1 255.255.255.128
 no shutdown
 ip helper-address 10.0.0.6
@@ -127,16 +147,17 @@ router rip
 version 2
 no auto-summary
 network 54.98.153.0
+network 10.0.0.0
 ```
 
 ### Sur Recherche :
 ```
 conf term
-interface e0/0 (connectée à LAN Développement)
+interface e0/0
 ip address 54.98.153.2 255.255.255.128
 no shutdown
 
-interface e0/1 (connectée à LAN Recherche)
+interface e0/1 
 ip address 54.98.153.129 255.255.255.192
 no shutdown
 ip helper-address 10.0.0.6
@@ -147,6 +168,7 @@ router rip
 version 2
 no auto-summary
 network 54.98.153.128
+network 54.98.153.0
 ```
 
 ## Configuration des PC statiques
