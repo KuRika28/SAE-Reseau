@@ -151,6 +151,7 @@ router rip
 version 2
 no auto-summary
 network 54.98.153.128
+network 10.0.0.0
 ```
 
 ## Configuration des PC statiques
@@ -179,7 +180,7 @@ ip 54.98.152.2/25 54.98.152.1
 ```
 conf term
 ip access-list standard ls
-permit 10.0.0.1 0.0.0.255
+permit 10.0.0.0 0.0.0.255
 deny any
 end
 
@@ -193,7 +194,7 @@ end
 ```
 conf term
 ip access-list standard r
-permit 54.98.153.0 0.0.127
+permit 54.98.153.0 0.0.0.127
 deny any
 end
 
@@ -207,6 +208,7 @@ end
 ```
 conf term
 ip access-list standard dmz
+permit 10.0.0.0 0.0.0.255
 deny any
 end
 
