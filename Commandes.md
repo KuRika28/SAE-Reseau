@@ -208,12 +208,15 @@ end
 ```
 conf term
 ip access-list standard dmz
+deny 54.98.152.0 0.0.1.255
 permit 10.0.0.0 0.0.0.255
 deny any
 end
 
 conf term
-interface e0/0
+interface e0/1
 ip access-group dmz in
 end
+
+
 ```
