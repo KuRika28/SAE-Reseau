@@ -184,7 +184,7 @@ ip 54.98.153.3/25 54.98.153.1
 
 ### Sur PCRS
 ```
-ip 54.98.153.130 54.98.153.129
+ip 54.98.153.130/26 54.98.153.129
 ```
 
 ### Sur PCCS
@@ -211,12 +211,15 @@ end
 ```
 conf term
 ip access-list standard r
-permit 54.98.153.0 0.0.127
+permit 54.98.153.128 0.0.0.63
+permit 54.98.153.0 0.0.0.127
 deny any
 end
 
 conf term
 interface e0/0
+ip access-group r in
+interface e0/1
 ip access-group r in
 end
 ```
