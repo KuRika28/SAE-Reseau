@@ -168,7 +168,8 @@ router rip
 version 2
 no auto-summary
 network 54.98.153.128
-network 54.98.153.0
+network 10.0.0.0
+
 ```
 
 ## Configuration des PC statiques
@@ -184,7 +185,7 @@ ip 54.98.153.3/25 54.98.153.1
 
 ### Sur PCRS
 ```
-ip 54.98.153.130 54.98.153.129
+ip 54.98.153.130/25 54.98.153.129
 ```
 
 ### Sur PCCS
@@ -192,12 +193,12 @@ ip 54.98.153.130 54.98.153.129
 ip 54.98.152.2/25 54.98.152.1
 ```
 
-## Pare-feux
+## Pare-feux
 ### Sur Libre-service
 ```
 conf term
 ip access-list standard ls
-permit 10.0.0.1 0.0.0.255
+permit 10.0.0.0 0.0.0.255
 deny any
 end
 
@@ -210,11 +211,11 @@ ip access-group ls in
 end
 ```
 
-### Sur Recherche
+### Sur Recherche
 ```
 conf term
 ip access-list standard r
-permit 54.98.153.0 0.0.127
+permit 54.98.153.0 0.0.0.127
 deny any
 end
 
@@ -227,15 +228,19 @@ ip access-group r in
 end
 ```
 
-### Sur DMZ
+### Sur DMZ
 ```
 conf term
 ip access-list standard dmz
+deny 54.98.152.0 0.0.1.255
+permit 10.0.0.0 0.0.0.255
 deny any
 end
 
 conf term
-interface e0/0
+interface e0/1
 ip access-group dmz in
 end
+
+
 ```
