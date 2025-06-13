@@ -7,6 +7,13 @@ interface e0/0
 ip address 10.0.0.1 255.255.255.0
 no shutdown
 end
+
+conf term
+router rip
+version 2
+no auto-summary
+network 54.98.152.0
+network 10.0.0.0
 ```
 
 ### Sur DHCP :
@@ -15,7 +22,17 @@ conf term
 interface e0/0
 ip address 10.0.0.6 255.255.255.0
 no shutdown
+end
 
+conf term
+router rip
+version 2
+no auto-summary
+network 54.98.152.0
+network 10.0.0.0
+end
+
+conf term
 service dhcp
 
 ip dhcp pool land
@@ -152,6 +169,7 @@ version 2
 no auto-summary
 network 54.98.153.128
 network 10.0.0.0
+
 ```
 
 ## Configuration des PC statiques
@@ -187,6 +205,9 @@ end
 conf term
 interface e0/0
 ip access-group ls in
+
+interface e0/1
+ip access-group ls in
 end
 ```
 
@@ -200,6 +221,9 @@ end
 
 conf term
 interface e0/0
+ip access-group r in
+
+interface e0/1
 ip access-group r in
 end
 ```
