@@ -1,0 +1,19 @@
+Jun 11 08:20:33.870 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Jun 11 08:20:33.870 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50385.
+Jun 11 08:20:33.873 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 11 08:20:33.876 HYPERVISOR: exec_cmd: hypervisor working_dir /home/iut45/Etudiants/o22401110/GNS3/projects/sae/project-files/dynamips 
+Jun 11 08:20:33.876 GENERAL: working_dir=/home/iut45/Etudiants/o22401110/GNS3/projects/sae/project-files/dynamips
+Jun 11 08:20:33.876 HYPERVISOR: exec_cmd: ethsw create LANL 
+Jun 11 08:20:34.600 HYPERVISOR: exec_cmd: nio create_udp udp-6a29b2ca-0f10-4df9-ba53-5b33f2356d31 10001 127.0.0.1 10000 
+Jun 11 08:20:34.601 HYPERVISOR: exec_cmd: ethsw add_nio LANL udp-6a29b2ca-0f10-4df9-ba53-5b33f2356d31 
+Jun 11 08:20:34.607 HYPERVISOR: exec_cmd: ethsw set_access_port LANL udp-6a29b2ca-0f10-4df9-ba53-5b33f2356d31 1 
+Jun 11 08:20:36.712 HYPERVISOR: exec_cmd: nio create_udp udp-6f6911a8-0972-4104-9a48-ed131be0b04e 10033 127.0.0.1 10032 
+Jun 11 08:20:36.712 HYPERVISOR: exec_cmd: ethsw add_nio LANL udp-6f6911a8-0972-4104-9a48-ed131be0b04e 
+Jun 11 08:20:36.742 HYPERVISOR: exec_cmd: ethsw set_access_port LANL udp-6f6911a8-0972-4104-9a48-ed131be0b04e 1 
+Jun 11 08:20:36.821 HYPERVISOR: exec_cmd: nio create_udp udp-2794ced0-77a1-424a-8736-8c6a123a3b11 10035 127.0.0.1 10034 
+Jun 11 08:20:36.822 HYPERVISOR: exec_cmd: ethsw add_nio LANL udp-2794ced0-77a1-424a-8736-8c6a123a3b11 
+Jun 11 08:20:36.837 HYPERVISOR: exec_cmd: ethsw set_access_port LANL udp-2794ced0-77a1-424a-8736-8c6a123a3b11 1 
+Jun 11 09:00:06.398 HYPERVISOR: exec_cmd: ethsw delete LANL 
+Jun 11 09:00:06.464 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 11 09:00:06.815 HYPERVISOR: Stopped.
+Jun 11 09:00:06.815 GENERAL: reset done.
