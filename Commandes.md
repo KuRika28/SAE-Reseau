@@ -4,7 +4,7 @@
 ```
 conf term
 interface e0/0
-ip address 10.0.0.1 255.255.255.0
+ip address 54.98.153.200 255.255.255.192
 no shutdown
 end
 
@@ -12,8 +12,8 @@ conf term
 router rip
 version 2
 no auto-summary
-network 54.98.152.0
-network 10.0.0.0
+network 54.98.153.192
+end
 ```
 
 ### Sur DHCP :
@@ -64,6 +64,7 @@ network 54.98.153.192 255.255.255.192
 lease 1
 default-router 54.98.153.193
 ip dhcp excluded-address 54.98.153.193 54.98.153.202
+end
 ```
 
 ### Sur Commercial :
@@ -85,6 +86,7 @@ version 2
 no auto-summary
 network 54.98.152.0
 network 10.0.0.0
+end
 ```
 
 ### Sur DMZ
@@ -97,8 +99,6 @@ no shutdown
 interface e0/1
 ip address 54.98.153.193 255.255.255.192
 no shutdown
-ip helper-address 10.0.0.6
-end
 
 conf term
 router rip
@@ -106,6 +106,7 @@ version 2
 no auto-summary
 network 54.98.153.192
 network 10.0.0.0
+end
 ```
 
 ### Sur Libre-service :
@@ -127,6 +128,7 @@ version 2
 no auto-summary
 network 54.98.152.128
 network 10.0.0.0
+end
 ```
 
 ### Sur Développement :
@@ -148,6 +150,7 @@ version 2
 no auto-summary
 network 54.98.153.0
 network 10.0.0.0
+end
 ```
 
 ### Sur Recherche :
@@ -168,7 +171,9 @@ router rip
 version 2
 no auto-summary
 network 54.98.153.128
-network 54.98.153.0
+network 10.0.0.0
+end
+
 ```
 
 ## Configuration des PC statiques
@@ -192,26 +197,33 @@ ip 54.98.153.130/26 54.98.153.129
 ip 54.98.152.2/25 54.98.152.1
 ```
 
-## Pare-feux
+### Sur SERVEUR1
+```
+ip 54.98.153.194 54.98.153.193
+```
+
+## Pare-feux
 ### Sur Libre-service
 ```
 conf term
 ip access-list standard ls
-permit 10.0.0.1 0.0.0.255
+permit 10.0.0.0 0.0.0.255
 deny any
 end
 
 conf term
 interface e0/0
 ip access-group ls in
+
+interface e0/1
+ip access-group ls in
 end
 ```
 
-### Sur Recherche
+### Sur Recherche
 ```
 conf term
 ip access-list standard r
-permit 54.98.153.128 0.0.0.63
 permit 54.98.153.0 0.0.0.127
 deny any
 end
@@ -219,20 +231,25 @@ end
 conf term
 interface e0/0
 ip access-group r in
+
 interface e0/1
 ip access-group r in
 end
 ```
 
-### Sur DMZ
+### Sur DMZ
 ```
 conf term
 ip access-list standard dmz
+deny 54.98.152.0 0.0.1.255
+permit 10.0.0.0 0.0.0.255
 deny any
 end
 
 conf term
-interface e0/0
+interface e0/1
 ip access-group dmz in
 end
+
+
 ```

@@ -1,0 +1,37 @@
+May 23 09:15:12.808 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+May 23 09:15:12.808 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 43907.
+May 23 09:15:12.815 HYPERVISOR: exec_cmd: hypervisor version 
+May 23 09:15:12.817 HYPERVISOR: exec_cmd: hypervisor working_dir /home/iut45/Etudiants/o22401110/SAE/SAE RESEAU/sae/project-files/dynamips 
+May 23 09:15:12.817 GENERAL: working_dir=/home/iut45/Etudiants/o22401110/SAE/SAE RESEAU/sae/project-files/dynamips
+May 23 09:15:12.817 HYPERVISOR: exec_cmd: hypervisor working_dir /home/iut45/Etudiants/o22401110/SAE/SAE RESEAU/sae/project-files/dynamips/0d220c5d-5513-4d1d-a800-d128520e507e 
+May 23 09:15:12.817 GENERAL: working_dir=/home/iut45/Etudiants/o22401110/SAE/SAE RESEAU/sae/project-files/dynamips/0d220c5d-5513-4d1d-a800-d128520e507e
+May 23 09:15:12.818 HYPERVISOR: exec_cmd: vm create R1 4 c3600 
+May 23 09:15:12.821 VM: VM R1 created.
+May 23 09:15:12.823 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5003 
+May 23 09:15:12.823 HYPERVISOR: exec_cmd: c3600 get_mac_addr R1 
+May 23 09:15:12.824 HYPERVISOR: exec_cmd: vm set_ios R1 /home/iut45/Etudiants/o22401110/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+May 23 09:15:12.825 HYPERVISOR: exec_cmd: vm get_status R1 
+May 23 09:15:12.825 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x60693818 
+May 23 09:15:12.827 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+May 23 09:15:12.831 HYPERVISOR: exec_cmd: vm get_status R1 
+May 23 09:15:12.831 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 0 NM-4E 
+May 23 09:15:12.897 HYPERVISOR: exec_cmd: vm set_ios R1 /home/iut45/Etudiants/o22401110/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+May 23 09:15:17.946 HYPERVISOR: exec_cmd: vm set_ios R1 /home/iut45/Etudiants/o22401110/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+May 23 09:15:17.949 HYPERVISOR: exec_cmd: vm rename R1 Recherche 
+May 23 09:15:18.024 HYPERVISOR: exec_cmd: vm set_ios Recherche /home/iut45/Etudiants/o22401110/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+May 23 09:16:19.293 HYPERVISOR: exec_cmd: vm set_ios Recherche /home/iut45/Etudiants/o22401110/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+May 23 09:16:22.708 HYPERVISOR: exec_cmd: vm set_ios Recherche /home/iut45/Etudiants/o22401110/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+May 23 09:16:29.896 HYPERVISOR: exec_cmd: nio create_udp udp-d297d253-cbcf-4ffe-b63f-3fa60bd08cb0 10022 127.0.0.1 10023 
+May 23 09:16:30.126 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Recherche 0 0 udp-d297d253-cbcf-4ffe-b63f-3fa60bd08cb0 
+May 23 09:16:30.130 HYPERVISOR: exec_cmd: vm get_status Recherche 
+May 23 09:18:48.108 HYPERVISOR: exec_cmd: vm set_ios Recherche /home/iut45/Etudiants/o22401110/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+May 23 09:24:55.878 HYPERVISOR: exec_cmd: vm set_ios Recherche /home/iut45/Etudiants/o22401110/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+May 23 09:28:31.666 HYPERVISOR: exec_cmd: vm set_ios Recherche /home/iut45/Etudiants/o22401110/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+May 23 09:28:32.078 HYPERVISOR: exec_cmd: vm set_ios Recherche /home/iut45/Etudiants/o22401110/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+May 23 09:28:32.763 HYPERVISOR: exec_cmd: vm set_ios Recherche /home/iut45/Etudiants/o22401110/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+May 23 09:43:23.113 HYPERVISOR: exec_cmd: vm get_status Recherche 
+May 23 09:43:23.113 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding Recherche 0 0 
+May 23 09:43:23.115 HYPERVISOR: exec_cmd: nio delete udp-d297d253-cbcf-4ffe-b63f-3fa60bd08cb0 
+May 23 09:44:57.407 HYPERVISOR: exec_cmd: nio create_udp udp-b242f844-6967-4c84-a8ec-77204e560c83 10022 127.0.0.1 10023 
+May 23 09:44:57.409 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Recherche 0 0 udp-b242f844-6967-4c84-a8ec-77204e560c83 
+May 23 09:44:57.411 HYPERVISOR: exec_cmd: vm get_status Recherche 
