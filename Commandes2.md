@@ -237,15 +237,18 @@ end
 ### Sur Recherche
 ```
 conf term
-ip access-list standard r
-permit 54.98.153.0 0.0.0.127
-permit 10.0.0.0 0.0.0.255
-deny any
+ip access-list extended rEtendue
+permit ip 54.98.153.128 0.0.0.63 54.98.153.0 0.0.0.127
+permit ip 54.98.153.0 0.0.0.127 54.98.153.128 0.0.0.63
+deny ip 54.98.153.128 0.0.0.63 any
+permit ip any any
 end
 
 conf term
 interface e0/0
-ip access-group r in
+ip access-group rEtendue in
+interface e0/1
+ip access-group rEtendue in
 end
 ```
 
