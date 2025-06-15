@@ -185,7 +185,7 @@ end
 
 ```
 
-## Configuration des PC statiques
+## Configuration des PC
 ### Sur PCLS
 ```
 ip 54.98.152.130/25 54.98.152.129
@@ -223,7 +223,7 @@ conf term
 ip access-list standard ls
 permit 10.0.0.0 0.0.0.255
 permit 54.98.153.192 0.0.0.63
-permit 54.98.153.224 0.0.0.31
+permit 54.98.153.224 0.0.0.0
 permit 54.98.152.128 0.0.0.127
 deny any
 end
