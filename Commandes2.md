@@ -239,6 +239,7 @@ end
 conf term
 ip access-list extended rEtendue
 permit ip 54.98.153.0 0.0.0.127 54.98.153.128 0.0.0.63
+permit ip 54.98.153.128 0.0.0.63 54.98.153.0 0.0.0.127
 deny ip 54.98.153.128 0.0.0.63 any
 permit ip any any
 end
