@@ -121,8 +121,8 @@
                 "locked": false,
                 "rotation": 0,
                 "svg": "<svg width=\"113\" height=\"26\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">54.98.153.224/27</text></svg>",
-                "x": -451,
-                "y": -9,
+                "x": -363,
+                "y": -29,
                 "z": 2
             },
             {
@@ -2236,5 +2236,5 @@
     "type": "topology",
     "variables": null,
     "version": "2.2.54",
-    "zoom": 50
+    "zoom": 59
 }

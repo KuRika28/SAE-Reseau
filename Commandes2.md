@@ -122,7 +122,6 @@ conf term
 interface e0/0
 ip address 54.98.153.228 255.255.255.224
 no shutdown
-ip helper-address 54.98.153.227
 
 interface e0/1
 ip address 54.98.152.129 255.255.255.128
@@ -256,10 +255,10 @@ end
 ```
 conf term
 ip access-list extended dmzEtendue
-deny ip 54.98.153.192 0.0.0.31 any
+permit ip 10.0.0.0 0.0.0.255 any
 permit ip any 54.98.153.192 0.0.0.31
 permit ip 54.98.152.128 0.0.0.127 10.0.0.0 0.0.0.255
-permit ip 10.0.0.0 0.0.0.255 any
+deny ip 54.98.153.192 0.0.0.31 any
 end
 
 conf term
