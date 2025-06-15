@@ -222,13 +222,13 @@ ip 10.0.0.2/24 10.0.0.1
 conf term
 ip access-list standard ls
 permit 10.0.0.0 0.0.0.255
+permit 54.98.153.192 0.0.0.63
+permit 54.98.153.224 0.0.0.31
+permit 54.98.152.128 0.0.0.127
 deny any
 end
 
 conf term
-interface e0/0
-ip access-group ls in
-
 interface e0/1
 ip access-group ls in
 end
