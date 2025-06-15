@@ -238,7 +238,6 @@ end
 ```
 conf term
 ip access-list extended rEtendue
-permit ip 54.98.153.128 0.0.0.63 54.98.153.0 0.0.0.127
 permit ip 54.98.153.0 0.0.0.127 54.98.153.128 0.0.0.63
 deny ip 54.98.153.128 0.0.0.63 any
 permit ip any any
@@ -255,15 +254,15 @@ end
 ### Sur DMZ
 ```
 conf term
-ip access-list standard dmz
-permit 10.0.0.0 0.0.0.255
-deny any
+ip access-list extended dmzEtendue
+deny ip 54.98.153.192 0.0.0.31 any
+permit ip any 54.98.153.192 0.0.0.31
+permit ip 54.98.152.128 0.0.0.127 10.0.0.0 0.0.0.255
+permit ip 10.0.0.0 0.0.0.255 any
 end
 
 conf term
-interface e0/1
-ip access-group dmz in
 interface e0/0
-ip access-group dmz in
+ip access-group dmzEtendue in
 end
 ```
