@@ -48,7 +48,7 @@ ip dhcp excluded-address 54.98.153.1 54.98.153.10
 ip dhcp pool lanl
 network 54.98.152.128 255.255.255.128
 lease 1
-default-router 54.98.153.129
+default-router 54.98.152.129
 ip dhcp excluded-address 54.98.152.129 54.98.152.138
 
 ip dhcp pool lanc
@@ -112,6 +112,7 @@ version 2
 no auto-summary
 network 54.98.153.192
 network 54.98.153.224
+network 10.0.0.0
 end
 ```
 
@@ -121,6 +122,7 @@ conf term
 interface e0/0
 ip address 54.98.153.228 255.255.255.224
 no shutdown
+ip helper-address 54.98.153.227
 
 interface e0/1
 ip address 54.98.152.129 255.255.255.128
@@ -156,6 +158,7 @@ version 2
 no auto-summary
 network 54.98.153.0
 network 54.98.153.224
+network 54.98.153.128
 end
 ```
 
@@ -206,6 +209,11 @@ ip 54.98.152.2/25 54.98.152.1
 ### Sur SERVEUR1
 ```
 ip 54.98.153.195/27 54.98.153.193
+```
+
+### Sur PCInternet
+```
+ip 10.0.0.2/24 10.0.0.1
 ```
 
 ## Pare-feux
