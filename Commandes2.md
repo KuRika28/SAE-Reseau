@@ -255,8 +255,7 @@ end
 ```
 conf term
 ip access-list standard dmz
-deny 54.98.152.0 0.0.1.255
-permit 54.98.153.224 0.0.0.31
+permit 10.0.0.0 0.0.0.255
 deny any
 end
 
