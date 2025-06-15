@@ -221,7 +221,7 @@ ip 10.0.0.2/24 10.0.0.1
 ```
 conf term
 ip access-list standard ls
-permit 54.98.153.224 0.0.0.31
+permit 10.0.0.0 0.0.0.255
 deny any
 end
 
@@ -239,6 +239,7 @@ end
 conf term
 ip access-list standard r
 permit 54.98.153.0 0.0.0.127
+permit 10.0.0.0 0.0.0.255
 deny any
 end
 
@@ -258,6 +259,8 @@ end
 
 conf term
 interface e0/1
+ip access-group dmz in
+interface e0/0
 ip access-group dmz in
 end
 ```
