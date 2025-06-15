@@ -122,7 +122,6 @@ conf term
 interface e0/0
 ip address 54.98.153.228 255.255.255.224
 no shutdown
-ip helper-address 54.98.153.227
 
 interface e0/1
 ip address 54.98.152.129 255.255.255.128
@@ -185,7 +184,7 @@ end
 
 ```
 
-## Configuration des PC statiques
+## Configuration des PC
 ### Sur PCLS
 ```
 ip 54.98.152.130/25 54.98.152.129
@@ -223,7 +222,7 @@ conf term
 ip access-list standard ls
 permit 10.0.0.0 0.0.0.255
 permit 54.98.153.192 0.0.0.63
-permit 54.98.153.224 0.0.0.31
+permit 54.98.153.224 0.0.0.0
 permit 54.98.152.128 0.0.0.127
 deny any
 end
@@ -237,30 +236,33 @@ end
 ### Sur Recherche
 ```
 conf term
-ip access-list standard r
-permit 54.98.153.0 0.0.0.127
-permit 10.0.0.0 0.0.0.255
-deny any
+ip access-list extended rEtendue
+permit ip 54.98.153.0 0.0.0.127 54.98.153.128 0.0.0.63
+permit ip 54.98.153.128 0.0.0.63 54.98.153.0 0.0.0.127
+deny ip 54.98.153.128 0.0.0.63 any
+permit ip any any
 end
 
 conf term
 interface e0/0
-ip access-group r in
+ip access-group rEtendue in
+interface e0/1
+ip access-group rEtendue in
 end
 ```
 
 ### Sur DMZ
 ```
 conf term
-ip access-list standard dmz
-permit 10.0.0.0 0.0.0.255
-deny any
+ip access-list extended dmzEtendue
+permit ip 10.0.0.0 0.0.0.255 any
+permit ip any 54.98.153.192 0.0.0.31
+permit ip 54.98.152.128 0.0.0.127 10.0.0.0 0.0.0.255
+deny ip 54.98.153.192 0.0.0.31 any
 end
 
 conf term
-interface e0/1
-ip access-group dmz in
 interface e0/0
-ip access-group dmz in
+ip access-group dmzEtendue in
 end
 ```
